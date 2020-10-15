@@ -1,0 +1,15 @@
+<html>
+    <head><title>Login Page</title></head>
+    <body>
+        <h1>Welcome to the login Page...</h1>
+        <form  method="post">
+            <input type="text" name="username" id=username >
+            <label for "username">UserName:</label>
+            <input type="password" name="password"  id="password">
+            <label for="password">Password:</label>
+            <input type ="submit" value ="LOGIN"  name="LOGIN" id="LOGIN" formaction="{% url 'login:login_click%' }">
+            <input type ="submit" value="SIGN UP" name= "SIGN UP" id="SIGN UP" formaction="{% url 'login:signup' %}">
+        </form>
+    </body>
+</html>
+

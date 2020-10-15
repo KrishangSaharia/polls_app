@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title> Index Page :</title>
+    </head>
+    <body>
+        <ul>
+            {% for transaction in latest_transaction_list %}
+                 <li>{{ transaction }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+
+</html>
